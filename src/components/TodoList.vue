@@ -6,7 +6,7 @@
         </div>
         <p>{{listArray}}</p>
         <ul>
-            <ListItem v-for="(value, index) in listArray" :key="index" :style="style"/>
+            <ListItem v-for="(value, index) in listArray" :key="index" :style="style" :text="value === '' ? undefined : value"/>
         </ul>
     </div>
 </template>

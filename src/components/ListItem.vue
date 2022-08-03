@@ -1,9 +1,15 @@
 <template>
-    <li>리스트 아이템입니다.</li>
+    <li>{{text}}</li>
 </template>
 <script>
 export default {
-    
+    props: {
+        text: {
+            type: String,
+            required: true,
+            default: "안녕",
+        }
+    }
 }
 </script>
 <style>
